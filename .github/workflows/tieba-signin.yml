@@ -7,7 +7,8 @@ on:
 
 jobs:
   signin:
-    runs-on: ubuntu-latest
+    # 强制锁定在旧版本系统
+     runs-on: ubuntu-24.04
     timeout-minutes: 15   # 设置超时限制
 
     env:
@@ -18,7 +19,7 @@ jobs:
         uses: actions/checkout@v4
         
       - name: 设置 Node.js 环境
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version: '16'
           
