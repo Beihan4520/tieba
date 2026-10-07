@@ -7,7 +7,6 @@ on:
 
 jobs:
   signin:
-    # 强制锁定在旧版本系统
      runs-on: ubuntu-24.04
     timeout-minutes: 15   # 设置超时限制
 
