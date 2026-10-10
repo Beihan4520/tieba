@@ -33,8 +33,8 @@ jobs:
           BATCH_INTERVAL: ${{ secrets.BATCH_INTERVAL || '100000' }}
           
           # 重试配置
-          MAX_RETRIES: ${{ secrets.MAX_RETRIES || '9' }}
-          RETRY_INTERVAL: ${{ secrets.RETRY_INTERVAL || '500000' }}
+          MAX_RETRIES: ${{ secrets.MAX_RETRIES || '5' }}
+          RETRY_INTERVAL: ${{ secrets.RETRY_INTERVAL || '5000' }}
           
           # 通知相关环境变量
           ENABLE_NOTIFY: ${{ secrets.ENABLE_NOTIFY || 'false' }}
